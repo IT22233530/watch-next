@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addFilm">
+
+    <TextView
+        android:id="@+id/addfilmheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Add Film Details"
+        android:textColor="@color/purple"
+        android:textSize="24dp"
+        android:layout_marginLeft="16dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/saveBtn"
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_alignTop="@id/addfilmheading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="1dp"
+        android:src="@drawable/baseline_assignment_turned_in_24" />
+
+    <EditText
+        android:id="@+id/addname"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/addfilmheading"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/puple_border"
+        android:hint="Enter film name"
+        android:fontFamily="@font/poppins"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/addcategory"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/addname"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/puple_border"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter film catergor"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/addraring"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/addcategory"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/puple_border"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter IMDB rating"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/adddiscription"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_below="@id/addraring"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/puple_border"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="Description"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>
